@@ -39,12 +39,18 @@ vertices
 
 blocks
 (
-    // fill in the details
+    //block 0
+    hex(0 1 4 3 8 9 12 11) (20 20 1) simpleGrading(1 1 1)
+    //block 1
+    hex(1 2 7 6 9 10 15 14) (20 20 1) simpleGrading(1 1 1)
+    //block 2
+    hex(6 7 5 4 14 15 13 12) (20 20 1) simpleGrading(1 1 1)
 );
 
 edges
 (
     // fill in the details
+    //none?
 );
 
 boundary
@@ -55,7 +61,7 @@ boundary
         faces
         (
 
-        // fill in the details
+        (0 8 11 3)
 
         );
     }
@@ -65,7 +71,7 @@ boundary
         faces
         (
 
-        // fill in the details
+        (7 15 13 5)
 
         );
     }
@@ -76,6 +82,8 @@ boundary
         (
        
         // fill in the details
+	(0 8 9 1)
+	(6 14 15 7)
 
         );
     }
@@ -85,7 +93,8 @@ boundary
         faces
         (
        
-        // fill in the details
+        (3 11 12 4)
+	(4 12 13 5)
 
         );
     }
@@ -95,7 +104,9 @@ boundary
         faces
         (
        
-        // fill in the details
+        (1 9 14 6)
+	(6 14 15 7)
+	//(2 10 15 7)
 
         );
     }
